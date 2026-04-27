@@ -1,0 +1,256 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.cont{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/OIP.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}    
+.header{
+    width: 100%;
+    height: 50%;
+}
+.img{
+    width: 100%;
+    height: 70%;
+    border: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.imgcenter{
+    width: 200px;
+    height: 200px;
+    background-image: url(img/Gemini_Generated_Image_pv6cp0pv6cp0pv6c.png);
+     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+.imgoriginal{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.reg{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    padding-right: 75px;
+    align-items: center;
+
+}
+.main{
+    width: 100;
+    height: 50%;
+    display: flex;
+}
+.clan-card {
+  background: linear-gradient(145deg, #1a1a1a, #000);
+  color: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  font-family: 'Arial', sans-serif;
+  max-width: 350px;
+}
+
+.clan-card h2 {
+  color: #c5a059;
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.clan-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.clan-card li {
+  margin: 10px 0;
+  border-bottom: 1px solid #333;
+  padding-bottom: 5px;
+}
+
+.clan-card li span {
+  color: #c5a059;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.tg{
+    width: 60%;
+    height: 100%;
+    display: flex;
+}
+
+.tginst{
+    width: 50%;
+    padding-top: 150px;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    padding-bottom: 200px;
+    padding-left: 20px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+body{
+    background:#111;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    margin:0;
+    font-family: Arial;
+}
+
+.dimum{
+    width: 350px;
+    height: 60px;
+    color:#00ff88;
+    font-size:16px;
+    text-align:center;
+    padding:20px 30px;
+    border:2px solid #00ff88;
+    border-radius:12px;
+    background:rgba(0,0,0,0.4);
+    box-shadow:0 0 15px #00ff88;
+    text-shadow:0 0 10px #00ff88;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow{
+    from{
+        box-shadow:0 0 10px #00ff88;
+    }
+    to{
+        box-shadow:0 0 25px #00ff88;
+    }
+}
+
+.imgtg{
+    background-image: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.snimok{
+    width: 80%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.a{
+ font-size:20px;
+    color:#00fff2;
+    padding-left: 5px;
+    /* border:2px solid #00fff2; */
+    border-radius:15px;
+    text-shadow:0 0 10px #00fff2, 0 0 20px #00fff2;
+    /* box-shadow:0 0 20px #00fff2; */
+    transition:0.4s;
+    cursor:pointer;
+}
+
+.gavat{
+    width: 50%;
+    height: 70%;
+    align-items: center;
+    display: flex;
+}
+
+.gavatfon{
+    width: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    background-image: url(img/5e1ae33a-cf9d-49bf-929b-ba135f8a3d9a.png);
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+    /* Փոխում ենք հիմնական կոնտեյների բարձրությունը, որպեսզի չսահմանափակվի միայն էկրանով */
+    .cont {
+        height: auto;
+        padding: 10px;
+    }
+
+    /* Վերնագրի հատված */
+    .header {
+        height: auto;
+        padding-top: 20px;
+    }
+
+    .img {
+        height: auto;
+        border: none; /* հանում ենք շրջանակը հեռախոսի համար */
+    }
+
+    /* Հիմնական բլոկ (flex-direction: column) */
+    .main {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .reg {
+        width: 100%;
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    .clan-card {
+        width: 95%;
+        margin-bottom: 20px;
+    }
+
+    .tg {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tginst {
+        width: 100%;
+        padding: 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .dimum {
+        width: 90%;
+        height: auto;
+    }
+
+    .gavat {
+        display: none; /* Հաճախ հեռախոսների վրա նկարները տեղ չեն լինում, կարող եք թողնել կամ թաքցնել */
+    }
+    
+    body {
+        height: auto; /* Այսպիսով էջը կերկարի պարունակության չափով */
+    }
+}
